@@ -13,11 +13,13 @@ function Html({ title, description, body, debug }) {
     <html className="no-js" lang="">
       <head>
         <meta charSet="utf-8" />
+
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <title>{title || config.title}</title>
         <meta name="description" content={description || config.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="stylesheet" href="react-bootstrap-table-all.min.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
         <script src={'/app.js?' + new Date().getTime()} />
       </head>
