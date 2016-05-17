@@ -20,7 +20,10 @@ function Html({ title, description, body, debug }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="stylesheet" href="react-bootstrap-table-all.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"/>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"/>
         <script src={'/app.js?' + new Date().getTime()} />
       </head>
       <body>

@@ -6,6 +6,6 @@ from django.db import models
 
 
 class Product(models.Model):
-    product_name = models.CharField(max_length=200)
-    product_description = models.CharField(max_length=200)
-    unit_price = models.IntegerField(default=0)
+    product_name = models.CharField(max_length=250, unique=True)
+    product_description = models.CharField(max_length=250, null=True, blank=True, default=None)
+    unit_price = models.DecimalField(max_digits=8, decimal_places=2, null=True, blank=True, default=0)
